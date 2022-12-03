@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang = "es">
+
+    <head>
+        <meta charset = "UTF-8">
+        <title> Encrypter </title>
+        <link rel = "shortcut icon" href="imgs/bochi.ico">
+        <link rel = "stylesheet" href = "reset.css">
+        <link rel = "stylesheet" href = "style.css">
+    </head>
+
+    <body>
+
+        <div class = "input_text">
+            <textarea id = "text_encrypt" name = "text_encrypt"  placeholder = "Ingrese el texto aqui"></textarea>
+        </div>
+
+        <div class = "encrypt">
+            <button onclick= "change(opc = 1)">
+                Encriptar
+            </button>
+        </div>
+
+        <div class = "decrypt">
+            <button onclick = "change(opc = 0)">
+                Desencriptar
+            </button>
+        </div> 
+
+        <div class = "show_text">
+            <textarea name="text_show" id="text_show"disabled>
+            </textarea>
+        </div>
+
+        <div class = "copy_text">
+            <button id = "copy" onclick="copy()">
+                copiar
+            </button>
+        </div>
+    </body>
+
+    <script>
+        function change(){
+            if(opc){
+                var text = document.getElementById('text_encrypt');
+                document.getElementById('text_show').innerHTML = text.value;
+                document.getElementById('IMG').style.display = 'none';
+            } else{
+                var text = document.getElementById('text_encrypt');
+                document.getElementById('text_show').innerHTML = text.value;
+                document.getElementById('IMG').style.display = 'none';
+            }
+        }
+        function copy(){
+            var copy = document.getElementById('text_show');
+            document.getElementById('copy').innerHTML = "copiado!";
+            copy.select();
+            navigator.clipboard.writeText(copy.value);
+        }
+
+    </script>
+
+</html>

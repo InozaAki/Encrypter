@@ -1,0 +1,96 @@
+body{background-color:rgb(246, 246, 246);}
+.input_text textarea{
+    background-color: rgb(246, 246, 246);
+    font-size: 27px;
+    font-style: initial;
+    color: rgb(25, 25, 112);
+    position: absolute;
+    width: 700px;
+    height: 300px;
+    margin-top: 120px;
+    margin-left: 155px;
+    resize: none;
+    border: none;
+    outline: none;
+}
+.show_text textarea{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 915px;
+    top: 40px;
+    font-size: 20px;
+    resize: none;
+    border-radius: 10px;
+    height: 550px;
+    width: 370px;
+    border: none;
+    outline: none;
+    white-space: normal;
+    text-align: center;
+    text-align-last: center;
+    padding-top: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    
+}
+.decrypt button{
+    position: absolute;
+    margin-top: 525px;
+    margin-left: 525px;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: none;
+    color: rgb(52, 86, 139);
+    border-color: rgb(52, 86, 139);
+    border: 1px;
+    border-style: solid;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.encrypt button{
+    position: absolute;
+    margin-top: 525px;
+    margin-left: 160px;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgb(28, 56, 121);
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.copy_text button{
+    position: absolute;
+    margin-top: 525px;
+    margin-left: 950px;
+    width: 300px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(52, 86, 139);
+    border-color: rgb(52, 86, 139);
+    border-radius: 10px;
+    border: 1px;
+    border-style: solid;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.input_text ::placeholder{color: rgb(25, 25, 112);}
+.encrypt button:active{transform: translateY(3px);}
+.decrypt button:active{transform: translateY(3px);}
+
+.copy_text button:hover {
+    background-color: rgb(28, 56, 121);
+    color: rgb(255, 255, 255);
+    border: none;
+}
+.decrypt button:hover {
+    background-color: rgb(28, 56, 121);
+    color: rgb(255, 255, 255);
+    border: none;
+}
+.encrypt button:hover {
+    opacity: 0.85;
+  }
